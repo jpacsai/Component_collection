@@ -1,12 +1,16 @@
 import React from 'react';
+
+import Navigation from './Navigation';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      Component collection
-    </div>
-  );
+class App extends React.PureComponent {
+  render() {
+    return (
+      <div className="App">
+        <Navigation />
+      </div>
+    );
+  }
 }
 
 export default App;
