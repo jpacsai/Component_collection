@@ -1,12 +1,19 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import './Navigation.scss';
+import "./Navigation.scss";
 
 class Navigation extends React.PureComponent {
-  render () {
+  render() {
     return (
       <div className="Navigation">
-        Navigation
+        <Link to="/">
+          <span>Home</span>
+        </Link>
+        
+        <Link to="/buttons">
+          <span>Buttons</span>
+        </Link>
       </div>
     );
   }
