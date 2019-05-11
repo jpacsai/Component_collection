@@ -2,7 +2,11 @@ import React from 'react';
 
 import './Page.scss';
 
-class Page extends React.PureComponent {
+export type PageProps = {
+  className: string;
+}
+
+class Page extends React.PureComponent<PageProps> {
   render() {
     const { children, className  } = this.props;
     return (
