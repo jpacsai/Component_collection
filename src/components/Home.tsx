@@ -7,7 +7,7 @@ class Home extends React.PureComponent {
   render() {
     return (
       <Page className="Home">
-        Home Page
+        <h1>Component collection</h1>
       </Page>
     );
   }

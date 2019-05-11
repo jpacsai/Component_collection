@@ -1,11 +1,13 @@
 import React from "react";
-import classnames from "classnames";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Header from "./Header";
 import Navigation from "./Navigation";
+
 import Home from "./Home";
 import ButtonsPage from "./buttons/ButtonsPage";
+import InputsPage from './inputs/InputsPage';
+
 import "./App.scss";
 
 export type AppState = {
@@ -32,6 +34,7 @@ class App extends React.PureComponent<AppState> {
 
             <Route exact path="/" component={Home} />
             <Route path="/buttons" component={ButtonsPage} />
+            <Route path="/inputs" component={InputsPage} />
           </main>
         </div>
       </Router>

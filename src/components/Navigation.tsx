@@ -1,6 +1,6 @@
 import React from "react";
 import classnames from 'classnames';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "./Navigation.scss";
 
@@ -13,9 +13,12 @@ class Navigation extends React.PureComponent<NavigationProps> {
     const { showMenu } = this.props;
     return (
       <div className={classnames("Navigation", showMenu ? 'showMenu' : '')}>        
-        <Link to="/buttons">
+        <NavLink to="/buttons" className="Link" activeClassName="selected">
           <span>Buttons</span>
-        </Link>
+        </NavLink>
+        <NavLink to="/inputs" className="Link" activeClassName="selected">
+          <span>Inputs</span>
+        </NavLink>
       </div>
     );
   }

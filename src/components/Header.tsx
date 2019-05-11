@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import './Header.scss';
 
@@ -15,9 +15,9 @@ class Header extends React.PureComponent<HeaderProps> {
     return (
       <div className="Header">
         <button className="menu-button" onClick={this.handleClick}>Menu</button>
-        <Link to="/">
+        <NavLink exact to="/" className="Link" activeClassName="selected">
           <span>Home</span>
-        </Link>
+        </NavLink>
       </div>
     );
   }

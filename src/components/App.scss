@@ -1,7 +1,6 @@
 @import '../variables.scss';
 
 .App {
-  text-align: center;
   display: flex;
   flex-direction: column;
   color: $text;
@@ -10,9 +9,11 @@
     box-sizing: border-box;
   }
 
-  a {
+  .Link {
     color: $text;
     text-decoration: none;
+    line-height: 2rem;
+    font-weight: bold;
   }
 
   main {

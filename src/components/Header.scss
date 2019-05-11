@@ -5,12 +5,26 @@
   background-color: $secondary;
   color: $text;
   padding: 1rem;
-  height: 3rem;
+  height: $header-height;
+
+  .menu-button {
+    margin-right: 1rem;
+  }
 
   @media screen and (min-width: 770px) {
     .menu-button {
       display: none;
     }
   }
+
+  .Link {
+    line-height: 2rem;
+
+    &.selected {
+      color: $primary;
+    }
+  }
+
+  
   
 }

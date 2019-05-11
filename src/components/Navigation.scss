@@ -18,7 +18,11 @@
     width: 15rem;
   }
 
-  span {
-    margin: 0.5rem;
+  .Link {
+    line-height: 2rem;
+    
+    &.selected {
+      color: $primary;
+    }
   }
 }
