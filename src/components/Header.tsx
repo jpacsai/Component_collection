@@ -1,5 +1,8 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import Breakpoint, { BreakpointProvider } from 'react-socks';
+
+const MobileHeader = React.lazy(() => import("./MobileHeader"));
+const DesktopHeader = React.lazy(() => import("./DesktopHeader"));
 
 import './Header.scss';
 
@@ -13,12 +16,16 @@ class Header extends React.PureComponent<HeaderProps> {
   }
   render() {
     return (
-      <div className="Header">
-        <button className="menu-button" onClick={this.handleClick}>Menu</button>
-        <NavLink exact to="/" className="Link" activeClassName="selected">
-          <span>Home</span>
-        </NavLink>
-      </div>
+      <BreakpointProvider>
+        <div className="example">
+          <Breakpoint small down>
+            <MobileHeader onClick={this.handleClick}/>
+          </Breakpoint>
+          <Breakpoint medium up>
+            <DesktopHeader onClick={this.handleClick}/>
+          </Breakpoint>
+        </div>
+      </BreakpointProvider>
     );
   }
 }
