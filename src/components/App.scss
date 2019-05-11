@@ -1,7 +1,19 @@
+@import '../variables.scss';
+
 .App {
   text-align: center;
   display: flex;
   flex-direction: column;
+  color: $text;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  a {
+    color: $text;
+    text-decoration: none;
+  }
 
   main {
     display: flex;
@@ -11,6 +23,7 @@
   @media screen and (min-width: 770px) {
     main {
       flex-direction: row;
+      height: calc(100vh - #{$header-height});
     }
   }
 }

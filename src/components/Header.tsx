@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import './Header.scss';
 
@@ -14,6 +15,9 @@ class Header extends React.PureComponent<HeaderProps> {
     return (
       <div className="Header">
         <button className="menu-button" onClick={this.handleClick}>Menu</button>
+        <Link to="/">
+          <span>Home</span>
+        </Link>
       </div>
     );
   }
