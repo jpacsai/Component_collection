@@ -1,4 +1,11 @@
 .Header {
   background-color: blue;
   padding: 1rem;
+
+  @media screen and (min-width: 770px) {
+    .menu-button {
+      display: none;
+    }
+  }
+  
 }

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "./Navigation.scss";
 
 export type NavigationProps = {
-  // showMenu: boolean;
+  showMenu: boolean;
 }
 
 export type NavigationState = {
@@ -22,10 +22,10 @@ class Navigation extends React.PureComponent<NavigationProps, NavigationState> {
   }
 
   render() {
-    // const { showMenu } = this.props;
+    const { showMenu } = this.props;
     const { menuOpen } = this.state;
     return (
-      <div className={classnames("Navigation", /* showMenu ? 'showMenu' : '' */)}>
+      <div className={classnames("Navigation", showMenu ? 'showMenu' : '')}>
         <Link to="/">
           <span>Home</span>
         </Link>

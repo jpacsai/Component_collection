@@ -10,27 +10,29 @@ import "./App.scss";
 
 export type AppState = {
   showMenu?: boolean;
-}
+};
 
 class App extends React.PureComponent<AppState> {
   state = {
     showMenu: false
-  }
+  };
 
   handleShowMenuToggle = () => {
-    console.log(!this.state.showMenu);
     this.setState({ showMenu: !this.state.showMenu });
-  }
+  };
 
   render() {
+    const { showMenu } = this.state;
     return (
       <Router>
-        <div className={"App"}>
-          <Header onClick={this.handleShowMenuToggle}/>
-          <Navigation />
+        <div className="App">
+          <Header onClick={this.handleShowMenuToggle} />
+          <main>
+            <Navigation showMenu={showMenu} />
 
-          <Route exact path="/" component={Home} />
-          <Route path="/buttons" component={ButtonsPage} />
+            <Route exact path="/" component={Home} />
+            <Route path="/buttons" component={ButtonsPage} />
+          </main>
         </div>
       </Router>
     );

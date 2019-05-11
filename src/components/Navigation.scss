@@ -1,6 +1,17 @@
 .Navigation {
   padding: 1rem;
   background-color: aqua;
+  display: none;
+
+  &.showMenu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 770px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   span {
     margin: 0.5rem;

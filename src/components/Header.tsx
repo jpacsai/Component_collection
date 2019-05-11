@@ -13,7 +13,7 @@ class Header extends React.PureComponent<HeaderProps> {
   render() {
     return (
       <div className="Header">
-        <button onClick={this.handleClick}>Menu</button>
+        <button className="menu-button" onClick={this.handleClick}>Menu</button>
       </div>
     );
   }
