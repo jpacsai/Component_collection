@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Page from '../common/Page';
+import Page from '../app-common/Page';
 import './PickerPage.scss';
 
 class PickerPage extends React.PureComponent {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Page from '../common/Page';
+import Page from '../app-common/Page';
 import './Home.scss';
 
 class Home extends React.PureComponent {

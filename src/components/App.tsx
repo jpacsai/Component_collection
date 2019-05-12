@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { paths } from '../paths';
 
-import Header from "./header/Header";
-import Navigation from "./navigation-bar/NavigationBar";
+import Header from "./app-Header/Header";
+import Navigation from "./app-Navigation/NavigationBar";
 
-import Home from "./home-page/Home";
+import Home from "./app-HomePage/Home";
 import ButtonsPage from "./buttons/ButtonsPage";
 import InputsPage from './inputs/InputsPage';
 import PickerPage from './pickers/PickerPage';
