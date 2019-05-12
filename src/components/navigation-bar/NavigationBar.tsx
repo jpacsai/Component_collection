@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import { NavLink } from "react-router-dom";
 import { paths } from '../../paths';
 
-import "./Navigation.scss";
+import "./NavigationBar.scss";
 
 export type NavigationProps = {
   showMenu: boolean;
