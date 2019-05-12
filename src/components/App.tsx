@@ -30,9 +30,9 @@ class App extends React.PureComponent<AppState> {
     return (
       <Router>
         <div className="App">
-          <Header onClick={this.handleShowMenuToggle} />
+          <Header onClick={this.handleShowMenuToggle} menuOpen={showMenu} />
           <main>
-            <Navigation showMenu={showMenu} />
+            <Navigation showMenu={showMenu}/>
 
             <Route exact path={paths.HOME_PAGE} component={Home} />
             <Route path={paths.BUTTONS_PAGE} component={ButtonsPage} />

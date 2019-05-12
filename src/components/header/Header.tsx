@@ -1,4 +1,5 @@
 import React from "react";
+import classnames from "classnames";
 import { NavLink } from "react-router-dom";
 import Breakpoint, { BreakpointProvider } from "react-socks";
 
@@ -6,6 +7,7 @@ import "./Header.scss";
 
 export type HeaderProps = {
   onClick: Function;
+  menuOpen: boolean;
 };
 
 class Header extends React.PureComponent<HeaderProps> {
@@ -13,16 +15,17 @@ class Header extends React.PureComponent<HeaderProps> {
     this.props.onClick();
   };
   render() {
+    const { menuOpen } = this.props;
     return (
       <React.Suspense fallback={<div>Loading...</div>}>
         <BreakpointProvider>
           <div className="Header" onClick={this.handleClick}>
             <Breakpoint small down className="menu-button">
-              <button  onClick={this.handleClick}>
-                Menu
-              </button>
+              <div onClick={this.handleClick} className={menuOpen ? 'menu-open' : ''}>
+                <i className="fas fa-bars" />
+              </div>
             </Breakpoint>
-            <NavLink exact to="/" className="Link" activeClassName="selected" >
+            <NavLink exact to="/" className="Link" activeClassName="selected">
               <span>Home</span>
             </NavLink>
           </div>

@@ -11,6 +11,18 @@
     margin-right: 1rem;
     width: min-content;
     display: inline-block;
+
+    > div {
+      background-color: white;
+      padding: 0.5rem;
+      border-radius: 0.2rem;
+      line-height: 1rem;
+
+      &.menu-open {
+        background-color: $text;
+        color: white;
+      }
+    }
   }
 
   .Link {
