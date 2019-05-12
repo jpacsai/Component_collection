@@ -6,8 +6,7 @@ import './InputsPage.scss';
 class InputsPage extends React.PureComponent {
   render() {
     return (
-      <Page className="InputsPage">
-        Inputs Page
+      <Page className="InputsPage" title="Input components">
       </Page>
     );
   }

@@ -6,8 +6,7 @@ import './PickerPage.scss';
 class PickerPage extends React.PureComponent {
   render() {
     return (
-      <Page className="PickerPage">
-        Picker Page
+      <Page className="PickerPage" title="Picker components">
       </Page>
     );
   }

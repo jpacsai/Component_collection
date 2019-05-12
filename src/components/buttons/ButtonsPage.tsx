@@ -6,8 +6,7 @@ import './ButtonsPage.scss';
 class ButtonsPage extends React.PureComponent {
   render() {
     return (
-      <Page className="ButtonsPage">
-        Buttons Page
+      <Page className="ButtonsPage" title="Buttons">
       </Page>
     );
   }
