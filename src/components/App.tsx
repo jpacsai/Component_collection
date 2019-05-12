@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { paths } from '../paths';
 
 import Header from "./header/Header";
-import Navigation from "./Navigation";
+import Navigation from "./navigation-bar/NavigationBar";
 
-import Home from "./Home";
+import Home from "./home-page/Home";
 import ButtonsPage from "./buttons/ButtonsPage";
 import InputsPage from './inputs/InputsPage';
 import PickerPage from './pickers/PickerPage';

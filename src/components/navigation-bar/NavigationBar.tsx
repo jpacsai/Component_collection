@@ -1,7 +1,7 @@
 import React from "react";
 import classnames from 'classnames';
 import { NavLink } from "react-router-dom";
-import { paths } from '../paths';
+import { paths } from '../../paths';
 
 import "./Navigation.scss";
 
