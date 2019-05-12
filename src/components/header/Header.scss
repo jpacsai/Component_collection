@@ -1,0 +1,23 @@
+@import "../../variables.scss";
+
+.Header {
+  box-sizing: border-box;
+  background-color: $secondary;
+  color: $text;
+  padding: 1rem;
+  height: $header-height;
+
+  .menu-button {
+    margin-right: 1rem;
+    width: min-content;
+    display: inline-block;
+  }
+
+  .Link {
+    line-height: 2rem;
+
+    &.selected {
+      color: $primary;
+    }
+  }
+}

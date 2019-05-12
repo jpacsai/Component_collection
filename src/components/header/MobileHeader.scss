@@ -1,6 +1,6 @@
-@import '../variables.scss';
+@import "../../variables.scss";
 
-.Header {
+.MobileHeader {
   box-sizing: border-box;
   background-color: $secondary;
   color: $text;
@@ -11,12 +11,6 @@
     margin-right: 1rem;
   }
 
-  @media screen and (min-width: 770px) {
-    .menu-button {
-      display: none;
-    }
-  }
-
   .Link {
     line-height: 2rem;
 
@@ -24,7 +18,4 @@
       color: $primary;
     }
   }
-
-  
-  
 }
