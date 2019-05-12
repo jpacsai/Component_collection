@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import { paths } from '../paths';
 
 import Header from "./header/Header";
 import Navigation from "./Navigation";
@@ -33,10 +34,10 @@ class App extends React.PureComponent<AppState> {
           <main>
             <Navigation showMenu={showMenu} />
 
-            <Route exact path="/" component={Home} />
-            <Route path="/buttons" component={ButtonsPage} />
-            <Route path="/inputs" component={InputsPage} />
-            <Route path="/pickers" component={PickerPage} />
+            <Route exact path={paths.HOME_PAGE} component={Home} />
+            <Route path={paths.BUTTONS_PAGE} component={ButtonsPage} />
+            <Route path={paths.INPUTS_PAGE} component={InputsPage} />
+            <Route path={paths.PICKERS_PAGE} component={PickerPage} />
           </main>
         </div>
       </Router>
