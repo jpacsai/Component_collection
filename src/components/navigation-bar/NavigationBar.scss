@@ -19,10 +19,19 @@
   }
 
   .Link {
-    line-height: 2rem;
+    line-height: 1rem;
+    margin-bottom: 1rem;
     
     &.selected {
       color: $primary;
     }
+  }
+
+  .Link:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .Link:hover {
+    color: $primary;
   }
 }
