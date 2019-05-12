@@ -19,6 +19,9 @@ class Navigation extends React.PureComponent<NavigationProps> {
         <NavLink to="/inputs" className="Link" activeClassName="selected">
           <span>Inputs</span>
         </NavLink>
+        <NavLink to="/pickers" className="Link" activeClassName="selected">
+          <span>Pickers</span>
+        </NavLink>
       </div>
     );
   }

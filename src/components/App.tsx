@@ -7,6 +7,7 @@ import Navigation from "./Navigation";
 import Home from "./Home";
 import ButtonsPage from "./buttons/ButtonsPage";
 import InputsPage from './inputs/InputsPage';
+import PickerPage from './pickers/PickerPage';
 
 import "./App.scss";
 
@@ -35,6 +36,7 @@ class App extends React.PureComponent<AppState> {
             <Route exact path="/" component={Home} />
             <Route path="/buttons" component={ButtonsPage} />
             <Route path="/inputs" component={InputsPage} />
+            <Route path="/pickers" component={PickerPage} />
           </main>
         </div>
       </Router>
