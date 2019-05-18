@@ -1,0 +1,14 @@
+.BasicSlider {
+  width: 280px;
+  height: 200px;
+
+  .slider {
+    height: 180px;
+
+    img {
+      height: 155px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
