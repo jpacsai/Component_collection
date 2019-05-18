@@ -9,6 +9,7 @@ import Home from "./app-HomePage/Home";
 import ButtonsPage from "./buttons/ButtonsPage";
 import InputsPage from './inputs/InputsPage';
 import PickerPage from './pickers/PickerPage';
+import SliderPage from './sliders/SliderPage';
 
 import "./App.scss";
 
@@ -38,6 +39,7 @@ class App extends React.PureComponent<AppState> {
             <Route path={paths.BUTTONS_PAGE} component={ButtonsPage} />
             <Route path={paths.INPUTS_PAGE} component={InputsPage} />
             <Route path={paths.PICKERS_PAGE} component={PickerPage} />
+            <Route path={paths.SLIDERS_PAGE} component={SliderPage} />
           </main>
         </div>
       </Router>

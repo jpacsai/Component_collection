@@ -23,6 +23,9 @@ class Navigation extends React.PureComponent<NavigationProps> {
         <NavLink to={paths.PICKERS_PAGE} className="Link" activeClassName="selected">
           <span>Pickers</span>
         </NavLink>
+        <NavLink to={paths.SLIDERS_PAGE} className="Link" activeClassName="selected">
+          <span>Sliders</span>
+        </NavLink>
       </div>
     );
   }
