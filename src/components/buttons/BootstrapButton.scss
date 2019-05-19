@@ -16,21 +16,21 @@
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   cursor: pointer;
 
-  background-color: $primary;
-  color: $bootstrap-text-light;
+  background-color: $bstr-primary;
+  color: $bstr-bootstrap-text-light;
 
   &:hover {
-    background-color: $primary-hover;
-    border-color: $primary-hover-border;
+    background-color: $bstr-primary-hover;
+    border-color: $bstr-primary-hover-border;
   }
 
   &.secondary {
-    background-color: $secondary;
+    background-color: $bstr-secondary;
   }
 
   &.secondary:hover {
-    background-color: $secondary-hover;
-    border-color: $secondary-hover-border;
+    background-color: $bstr-secondary-hover;
+    border-color: $bstr-secondary-hover-border;
   }
 
   &.success {
