@@ -24,8 +24,9 @@ class BasicSlider extends React.PureComponent<BasicSliderProps> {
     const { photos } = this.props;
 
     const settings = {
-      dots: true,
+      dots: false,
       infinite: false,
+      arrows: false,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -34,6 +35,7 @@ class BasicSlider extends React.PureComponent<BasicSliderProps> {
 
     return (
       <div className="BasicSlider">
+        <h4>Basic</h4>
         <Slider {...settings} className='slider'>
           {photos.map((photo, i) => (
             <div key={i} className='image'>

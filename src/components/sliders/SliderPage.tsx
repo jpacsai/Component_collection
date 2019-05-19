@@ -10,7 +10,9 @@ class SliderPage extends React.PureComponent {
     return (
       <Page className="SliderPage" title="Sliders">
         <Section title="react-slick">
-          <BasicSlider />
+          <div className="slider-container">
+            <BasicSlider />
+          </div>
         </Section>
       </Page>
     );

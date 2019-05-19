@@ -1,12 +1,24 @@
-.BasicSlider {
-  width: 280px;
-  height: 200px;
+@import "../../css-variables/variables.scss";
 
+.BasicSlider {
+  padding: 0.5rem;
+  width: 280px;
+  border: 3px $secondary solid;
+  margin: 0 auto;
+
+  h4 {
+    margin: 0 0 0.5rem;
+  }
+  
   .slider {
-    height: 180px;
+    box-sizing: content-box;
+
+    * {
+      height: 155px;
+    }
 
     img {
-      height: 155px;
+      height: 100%;
       width: 100%;
       object-fit: cover;
     }
