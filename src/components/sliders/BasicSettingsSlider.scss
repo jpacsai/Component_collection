@@ -1,0 +1,26 @@
+@import "../../css-variables/variables.scss";
+
+.BasicSettingsSlider {
+  padding: 0.5rem;
+  width: 280px;
+  border: 3px $secondary solid;
+  margin: 0 auto;
+
+  h4 {
+    margin: 0 0 0.5rem;
+  }
+  
+  .slider {
+    box-sizing: content-box;
+
+    * {
+      height: 155px;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
