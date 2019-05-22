@@ -17,18 +17,21 @@ class Header extends React.PureComponent<HeaderProps> {
     const { menuOpen } = this.props;
     return (
       <React.Suspense fallback={<div>Loading...</div>}>
-        <BreakpointProvider>
-          <div className="Header">
+        <div className="Header">
+          <BreakpointProvider>
             <Breakpoint small down className="menu-button">
-              <div onClick={this.handleClick} className={menuOpen ? 'menu-open' : ''}>
+              <div
+                onClick={this.handleClick}
+                className={menuOpen ? "menu-open" : ""}
+              >
                 <i className="fas fa-bars" />
               </div>
             </Breakpoint>
-            <NavLink exact to="/" className="Link" activeClassName="selected">
-              <span>Home</span>
-            </NavLink>
-          </div>
-        </BreakpointProvider>
+          </BreakpointProvider>
+          <NavLink exact to="/" className="Link" activeClassName="selected">
+            <span>Home</span>
+          </NavLink>
+        </div>
       </React.Suspense>
     );
   }
