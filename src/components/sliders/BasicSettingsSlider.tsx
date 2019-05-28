@@ -37,8 +37,9 @@ class BasicSettingsSlider extends React.PureComponent<BasicSettingsSliderProps, 
   }
 
   handleChange = (evt: any) => {
-    const { name, checked } = evt.target;
-    this.setState({ [name]: checked }); // TODO: add types
+    const { checked } = evt.target;
+    const { name } = evt.target;
+    this.setState(state => ({ ...state, [name]: checked }));
   }
 
   render() {
