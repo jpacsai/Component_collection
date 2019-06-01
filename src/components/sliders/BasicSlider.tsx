@@ -38,7 +38,7 @@ class BasicSlider extends React.PureComponent<BasicSliderProps> {
         <h4>Basic</h4>
         <Slider {...settings} className='slider'>
           {photos.map((photo, i) => (
-            <div key={i} className='image'>
+            <div key={i}>
               <img src={process.env.PUBLIC_URL + photo} alt="cat"/>
             </div>
           ))}
