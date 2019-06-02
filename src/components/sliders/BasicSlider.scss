@@ -1,10 +1,14 @@
 @import "../../css-variables/variables.scss";
 
 .BasicSlider {
-  padding: 0.5rem;
-  width: 100%;
-  border: 3px $secondary solid;
   box-sizing: border-box;
+  width: 98%;
+  height: 100%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 3px $secondary solid;
 
   h4 {
     margin: 0 0 0.5rem;
